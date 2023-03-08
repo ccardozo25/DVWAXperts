@@ -10,10 +10,10 @@ spec:
     spec:
       containers:
       - name: dvwaalb
-        securityContext: 
-           allowPrivilegeEscalation: false
         image: public.ecr.aws/f9n2h3p5/dvwaalb:<TAG>
         imagePullPolicy: "Always"
+        securityContext: 
+           allowPrivilegeEscalation: false
   selector:
     matchLabels:
       app: dvwaalb
