@@ -10,6 +10,8 @@ spec:
     spec:
       containers:
       - name: dvwa
+        securityContext: 
+           allowPrivilegeEscalation: false
         image: public.ecr.aws/f9n2h3p5/dvwapub:<TAG>
         imagePullPolicy: "Always"
   selector:
